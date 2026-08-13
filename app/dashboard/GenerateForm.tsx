@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function GenerateForm() {
+  const router = useRouter();
   const [productName, setProductName] = useState("");
   const [features, setFeatures] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -42,6 +44,8 @@ export default function GenerateForm() {
         if (done) break;
         setResult((prev) => prev + decoder.decode(value, { stream: true }));
       }
+
+      router.refresh();
     } catch (err) {
       setError("Network error. Please try again.");
     } finally {
@@ -116,4 +120,3 @@ export default function GenerateForm() {
     </div>
   );
 }
-//Test live deploy
