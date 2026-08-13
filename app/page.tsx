@@ -13,8 +13,8 @@ export default async function Home() {
     <main className="min-h-screen bg-[#FAFAF8]">
       <div className="h-[3px] bg-gradient-to-r from-[#0F5C4F] via-[#0F5C4F] to-[#B8934A]" />
 
-      <div className="max-w-2xl mx-auto px-6 py-24 text-center">
-        <div className="w-12 h-12 rounded-full bg-[#0F5C4F] flex items-center justify-center mx-auto mb-6">
+      <div className="max-w-2xl mx-auto px-4 py-22 text-center">
+        <div className="w-12 h-12 rounded-full bg-[#0F5C4F] flex items-center justify-center mx-auto">
           <span className="font-serif text-white text-xl">P</span>
         </div>
 
